@@ -116,7 +116,7 @@
 .topbar-inner,
 .topbar .fill {
   background-color: #222;
-  #gradient > .vertical(#333, #222);
+  #gradient > .vertical(#009EE9, #00AEEA);
   @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
   .box-shadow(@shadow);
 }
@@ -144,15 +144,18 @@
     float: none;
     padding: 10px 10px 11px;
     line-height: 19px;
+    color: @white;
     text-decoration: none;
     &:hover {
+      background-color: #333;
+      background-color: rgba(255,255,255,.15);
       color: @white;
       text-decoration: none;
     }
   }
   .active > a {
     background-color: #222;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(255,255,255,.15);
   }
 
   // Secondary (floated right) nav in topbar
@@ -173,13 +176,13 @@
   li.open .menu,
   .dropdown-toggle:hover,
   .dropdown.open .dropdown-toggle {
-    background: #444;
-    background: rgba(255,255,255,.05);
+    //background: #444;
+    //background: rgba(255,255,255,.05);
   }
   // .menu-dropdown for backwards compatibility
   .menu-dropdown,
   .dropdown-menu {
-    background-color: #333;
+    background-color: #26b3ec;
     // a.menu for backwards compatibility
     a.menu,
     .dropdown-toggle {
@@ -190,10 +193,10 @@
       }
     }
     li a {
-      color: #999;
+      color: @white;
       text-shadow: 0 1px 0 rgba(0,0,0,.5);
       &:hover {
-        #gradient > .vertical(#292929,#191919);
+        #gradient > .vertical(#00AEEA, #009EE9);
         color: @white;
       }
     }
