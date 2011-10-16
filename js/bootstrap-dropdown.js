@@ -27,7 +27,7 @@
   }
 
   $(function () {
-    $('html').bind("click", clearMenus);
+    $('html').bind("click touchstart", clearMenus);
     $('body').dropdown( '[data-dropdown] a.menu, [data-dropdown] .dropdown-toggle' );
   });
 
@@ -36,7 +36,7 @@
 
   $.fn.dropdown = function ( selector ) {
     return this.each(function () {
-      $(this).delegate(selector || d, 'click', function (e) {
+      $(this).delegate(selector || d, 'click touchstart', function (e) {
         var li = $(this).parent('li')
           , isActive = li.hasClass('open');
 
