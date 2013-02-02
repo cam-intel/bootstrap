@@ -23,7 +23,7 @@
   padding-left:  20px;
   padding-right: 20px;
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  border: 1px solid @navbarBorder;
+  // border: 1px solid @navbarBorder;
   .border-radius(@baseBorderRadius);
   .box-shadow(0 1px 4px rgba(0,0,0,.065));
 
@@ -55,7 +55,7 @@
   font-size: 20px;
   font-weight: 200;
   color: @navbarBrandColor;
-  text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+  // text-shadow: 0 1px 0 @navbarBackgroundHighlight;
   &:hover {
     text-decoration: none;
   }
@@ -202,7 +202,7 @@
 .navbar-fixed-top,
 .navbar-static-top {
   .navbar-inner {
-    .box-shadow(~"0 1px 10px rgba(0,0,0,.1)");
+    .box-shadow(~"0 1px 4px rgba(0,0,0,.25)");
   }
 }
 
@@ -241,7 +241,7 @@
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
   color: @navbarLinkColor;
   text-decoration: none;
-  text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+  // text-shadow: 0 1px 0 @navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -395,7 +395,7 @@
   .brand,
   .nav > li > a {
     color: @navbarInverseLinkColor;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    // text-shadow: 0 -1px 0 rgba(0,0,0,.25);
     &:hover {
       color: @navbarInverseLinkColorHover;
     }
@@ -473,7 +473,7 @@
       &.focused {
         padding: 5px 15px;
         color: @grayDark;
-        text-shadow: 0 1px 0 @white;
+        // text-shadow: 0 1px 0 @white;
         background-color: @navbarInverseSearchBackgroundFocus;
         border: 0;
         .box-shadow(0 0 3px rgba(0,0,0,.15));
