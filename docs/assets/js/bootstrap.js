@@ -732,7 +732,6 @@
     return $parent
   }
 
-
   /* DROPDOWN PLUGIN DEFINITION
    * ========================== */
 
@@ -769,7 +768,8 @@
     .on('click.dropdown.data-api touchstart.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api touchstart.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
-}(window.jQuery);/* =========================================================
+}(window.jQuery);
+/* =========================================================
  * bootstrap-modal.js v2.2.2
  * http://twitter.github.com/bootstrap/javascript.html#modals
  * =========================================================

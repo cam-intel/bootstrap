@@ -121,7 +121,6 @@
     return $parent
   }
 
-
   /* DROPDOWN PLUGIN DEFINITION
    * ========================== */
 
